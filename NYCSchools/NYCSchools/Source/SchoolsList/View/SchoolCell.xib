@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="schoolCell" rowHeight="168" id="SM8-dC-0QG" customClass="SchoolCell" customModule="NYCSchools" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SM8-dC-0QG" id="xPC-bp-u59">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xt-5S-jSq">
+                        <rect key="frame" x="15" y="15" width="384" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5A-cB-Ts3">
+                        <rect key="frame" x="15" y="51" width="384" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGb-zY-CrP">
+                        <rect key="frame" x="15" y="73" width="384" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbJ-TC-SsO">
+                        <rect key="frame" x="15" y="95" width="34" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="451-Aa-UMm">
+                        <rect key="frame" x="54" y="95" width="21" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="kOm-W1-IxR">
+                        <rect key="frame" x="2" y="122" width="145.5" height="31"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zt-hH-qPm">
+                                <rect key="frame" x="0.0" y="0.0" width="48.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="envelope" catalog="system"/>
+                                <connections>
+                                    <action selector="onEmailButtonTap:" destination="SM8-dC-0QG" eventType="touchUpInside" id="F8R-oI-aZv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqa-tB-vga">
+                                <rect key="frame" x="48.5" y="0.0" width="50" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="desktopcomputer" catalog="system"/>
+                                <connections>
+                                    <action selector="onWebsiteButtonTap:" destination="SM8-dC-0QG" eventType="touchUpInside" id="nFu-pT-rmQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rih-Pa-Naf">
+                                <rect key="frame" x="100.5" y="0.0" width="45" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="phone" catalog="system"/>
+                                <connections>
+                                    <action selector="onPhoneButtonTap:" destination="SM8-dC-0QG" eventType="touchUpInside" id="GeA-Eg-fzn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hGb-zY-CrP" firstAttribute="trailing" secondItem="5xt-5S-jSq" secondAttribute="trailing" id="4VA-nQ-S4R"/>
+                    <constraint firstItem="5xt-5S-jSq" firstAttribute="top" secondItem="xPC-bp-u59" secondAttribute="top" constant="15" id="HeZ-yw-mnb"/>
+                    <constraint firstItem="hGb-zY-CrP" firstAttribute="top" secondItem="n5A-cB-Ts3" secondAttribute="bottom" constant="5" id="Hjn-P9-hCq"/>
+                    <constraint firstItem="n5A-cB-Ts3" firstAttribute="top" secondItem="5xt-5S-jSq" secondAttribute="bottom" constant="10" id="K1q-cU-9ko"/>
+                    <constraint firstAttribute="trailing" secondItem="5xt-5S-jSq" secondAttribute="trailing" constant="15" id="KMD-Nf-o1c"/>
+                    <constraint firstItem="451-Aa-UMm" firstAttribute="leading" secondItem="gbJ-TC-SsO" secondAttribute="trailing" constant="5" id="SPR-PI-R4R"/>
+                    <constraint firstItem="n5A-cB-Ts3" firstAttribute="leading" secondItem="5xt-5S-jSq" secondAttribute="leading" id="T0L-W6-ZAG"/>
+                    <constraint firstItem="gbJ-TC-SsO" firstAttribute="leading" secondItem="5xt-5S-jSq" secondAttribute="leading" id="Xit-Qb-puC"/>
+                    <constraint firstAttribute="bottom" secondItem="kOm-W1-IxR" secondAttribute="bottom" constant="15" id="aKj-lI-tci"/>
+                    <constraint firstItem="5xt-5S-jSq" firstAttribute="leading" secondItem="xPC-bp-u59" secondAttribute="leading" constant="15" id="bc9-cK-pHA"/>
+                    <constraint firstItem="451-Aa-UMm" firstAttribute="bottom" secondItem="gbJ-TC-SsO" secondAttribute="bottom" id="cLT-41-lEe"/>
+                    <constraint firstItem="n5A-cB-Ts3" firstAttribute="trailing" secondItem="5xt-5S-jSq" secondAttribute="trailing" id="f2U-gn-dp7"/>
+                    <constraint firstItem="kOm-W1-IxR" firstAttribute="top" secondItem="gbJ-TC-SsO" secondAttribute="bottom" constant="10" id="i98-xA-JzW"/>
+                    <constraint firstItem="hGb-zY-CrP" firstAttribute="leading" secondItem="5xt-5S-jSq" secondAttribute="leading" id="kCc-Yf-acD"/>
+                    <constraint firstItem="gbJ-TC-SsO" firstAttribute="top" secondItem="hGb-zY-CrP" secondAttribute="bottom" constant="5" id="pKp-eL-SdL"/>
+                    <constraint firstItem="kOm-W1-IxR" firstAttribute="leading" secondItem="xPC-bp-u59" secondAttribute="leading" constant="2" id="v8J-W0-KQs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="n5A-cB-Ts3" id="88b-vg-oeh"/>
+                <outlet property="city" destination="hGb-zY-CrP" id="ItD-dA-JuU"/>
+                <outlet property="email" destination="6zt-hH-qPm" id="Zge-WA-TbB"/>
+                <outlet property="name" destination="5xt-5S-jSq" id="g9S-w1-Zh7"/>
+                <outlet property="phone" destination="rih-Pa-Naf" id="6DY-cC-3tI"/>
+                <outlet property="stateCode" destination="gbJ-TC-SsO" id="IA2-Xq-G5D"/>
+                <outlet property="website" destination="Sqa-tB-vga" id="SDX-1Q-wih"/>
+                <outlet property="zip" destination="451-Aa-UMm" id="PDV-zq-fBf"/>
+            </connections>
+            <point key="canvasLocation" x="-127.53623188405798" y="81.696428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="desktopcomputer" catalog="system" width="128" height="101"/>
+        <image name="envelope" catalog="system" width="128" height="93"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
+    </resources>
+</document>

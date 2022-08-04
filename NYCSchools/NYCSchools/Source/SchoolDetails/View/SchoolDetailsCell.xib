@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="schoolDetailsCell" rowHeight="120" id="WXt-YH-9Gx" customClass="SchoolDetailsCell" customModule="NYCSchools" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WXt-YH-9Gx" id="CRf-VO-eeb">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Critical Reading Avg Score" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PC2-v8-2Ni">
+                        <rect key="frame" x="20" y="15" width="347.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibu-N9-xxt">
+                        <rect key="frame" x="357.5" y="15" width="41.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Math Avg Score" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyL-9i-AJ9">
+                        <rect key="frame" x="20" y="50.5" width="120" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9y-nI-iDN">
+                        <rect key="frame" x="357.5" y="50.5" width="41.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Writing Avg Score" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efh-y1-0LK">
+                        <rect key="frame" x="20" y="86" width="135.5" height="19"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG7-qH-IW6">
+                        <rect key="frame" x="357.5" y="86" width="41.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PC2-v8-2Ni" firstAttribute="top" secondItem="CRf-VO-eeb" secondAttribute="top" constant="15" id="14a-rU-gDt"/>
+                    <constraint firstItem="PC2-v8-2Ni" firstAttribute="leading" secondItem="PyL-9i-AJ9" secondAttribute="leading" id="9zT-vI-nbv"/>
+                    <constraint firstAttribute="trailing" secondItem="Ibu-N9-xxt" secondAttribute="trailing" constant="15" id="L68-hg-1pV"/>
+                    <constraint firstItem="Efh-y1-0LK" firstAttribute="top" secondItem="PyL-9i-AJ9" secondAttribute="bottom" constant="15" id="NLU-wm-YYH"/>
+                    <constraint firstItem="PC2-v8-2Ni" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ibu-N9-xxt" secondAttribute="leading" constant="10" id="Nvf-Im-SBv"/>
+                    <constraint firstItem="r9y-nI-iDN" firstAttribute="trailing" secondItem="Ibu-N9-xxt" secondAttribute="trailing" id="Ttt-hj-7hB"/>
+                    <constraint firstItem="r9y-nI-iDN" firstAttribute="firstBaseline" secondItem="PyL-9i-AJ9" secondAttribute="firstBaseline" id="Z9k-1q-vws"/>
+                    <constraint firstItem="sG7-qH-IW6" firstAttribute="firstBaseline" secondItem="Efh-y1-0LK" secondAttribute="firstBaseline" id="ZeP-ar-rTe"/>
+                    <constraint firstItem="Ibu-N9-xxt" firstAttribute="firstBaseline" secondItem="PC2-v8-2Ni" secondAttribute="firstBaseline" id="cD6-FS-aST"/>
+                    <constraint firstItem="Efh-y1-0LK" firstAttribute="leading" secondItem="PyL-9i-AJ9" secondAttribute="leading" id="h13-PO-n0Z"/>
+                    <constraint firstItem="PC2-v8-2Ni" firstAttribute="leading" secondItem="CRf-VO-eeb" secondAttribute="leading" constant="20" id="hWx-Ag-51K"/>
+                    <constraint firstAttribute="bottom" secondItem="Efh-y1-0LK" secondAttribute="bottom" constant="15" id="lSk-56-6SD"/>
+                    <constraint firstItem="sG7-qH-IW6" firstAttribute="trailing" secondItem="Ibu-N9-xxt" secondAttribute="trailing" id="o3n-ex-oxJ"/>
+                    <constraint firstItem="PyL-9i-AJ9" firstAttribute="top" secondItem="PC2-v8-2Ni" secondAttribute="bottom" constant="15" id="zPq-wv-FAW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="criticalReadingAverageScore" destination="Ibu-N9-xxt" id="6O6-Ud-cec"/>
+                <outlet property="mathAverageScore" destination="r9y-nI-iDN" id="Fnz-K2-eZb"/>
+                <outlet property="writingAverageScore" destination="sG7-qH-IW6" id="246-CH-Ur4"/>
+            </connections>
+            <point key="canvasLocation" x="273.91304347826087" y="96.428571428571431"/>
+        </tableViewCell>
+    </objects>
+</document>
